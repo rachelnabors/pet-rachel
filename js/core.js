@@ -258,6 +258,15 @@ function depreciateMeters() {
     }
 };
 
+// Music
+// Get the audio element
+// var soundTyping = document.querySelector('audio');
+
+// // Wait till the music loads (or get a nasty error!)
+// soundTyping.addEventListener("canplaythrough", function () {
+
+// }, false);
+
 window.addEventListener("load", function load(event){
     window.removeEventListener("load", load, false); //remove listener, no longer needed
 

@@ -21,13 +21,13 @@
 
 /* line 256, spritesheet/*.png */
 .spritesheet-sprite, .laptop, .body, .mouth, .rage-quit .mouth, .unhappy .mouth, .enraged .mouth, .joyous .mouth, .overjoyed .mouth, .happy .mouth, .eyes, .rage-quit .eyes, .enraged .eyes, .happy .eyes, .joyous .eyes, .overjoyed .eyes, .bored .body, .gurgle, .bags, .snore, .hungry .mouth, .tired.happy .bags, .tired.joyous .bags, .tired.overjoyed .bags, .sleeping .body, .sleeping .mouth, .sleeping .eyes, .huff, .playing .body, .choco, .snacking .choco, .burrito, .eating .burrito, .book {
-  background-image: url('/img/spritesheet-s02e10d4fe9.png');
+  background-image: url('../img/spritesheet-s02e10d4fe9.png');
   background-repeat: no-repeat;
 }
 
 /* line 256, spritesheet-2x/*.png */
 .spritesheet-2x-sprite {
-  background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+  background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
   background-repeat: no-repeat;
 }
 
@@ -85,7 +85,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .laptop {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 85.61898%;
   }
 }
@@ -109,7 +109,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .body {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 29.8826%;
   }
 }
@@ -127,7 +127,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .mouth {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 98.57007%;
   }
 }
@@ -140,7 +140,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 50, ../scss/style.scss */
   .rage-quit .mouth {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 93.04099%;
   }
 }
@@ -152,7 +152,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 53, ../scss/style.scss */
   .unhappy .mouth, .enraged .mouth {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 91.65872%;
   }
 }
@@ -164,7 +164,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 57, ../scss/style.scss */
   .joyous .mouth {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 94.42326%;
   }
 }
@@ -176,7 +176,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 60, ../scss/style.scss */
   .overjoyed .mouth, .happy .mouth {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 87.51192%;
   }
 }
@@ -194,7 +194,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .eyes {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 75.55934%;
   }
 }
@@ -207,7 +207,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 68, ../scss/style.scss */
   .rage-quit .eyes, .enraged .eyes {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 65.19942%;
   }
 }
@@ -219,7 +219,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 72, ../scss/style.scss */
   .happy .eyes, .joyous .eyes, .overjoyed .eyes {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 72.10603%;
   }
 }
@@ -232,7 +232,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 80, ../scss/style.scss */
   .bored .body {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 16.38207%;
   }
 }
@@ -251,7 +251,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .gurgle {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 79.22458%;
   }
 }
@@ -270,7 +270,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .bags {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 1.28571%;
   }
 }
@@ -289,7 +289,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .snore {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 100%;
   }
 }
@@ -302,7 +302,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 94, ../scss/style.scss */
   .hungry .mouth {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 97.1878%;
   }
 }
@@ -386,7 +386,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 124, ../scss/style.scss */
   .tired.happy .bags, .tired.joyous .bags, .tired.overjoyed .bags {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 0;
   }
 }
@@ -399,7 +399,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 136, ../scss/style.scss */
   .sleeping .body {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 16.38207%;
   }
 }
@@ -411,7 +411,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 139, ../scss/style.scss */
   .sleeping .mouth {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 95.80553%;
   }
 }
@@ -423,7 +423,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 142, ../scss/style.scss */
   .sleeping .eyes {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 68.65272%;
   }
 }
@@ -448,7 +448,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .huff {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 81.17394%;
   }
 }
@@ -463,7 +463,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 159, ../scss/style.scss */
   .playing .body {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 2.88154%;
   }
 }
@@ -575,7 +575,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .choco {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 61.61542%;
   }
 }
@@ -592,7 +592,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 228, ../scss/style.scss */
   .snacking .choco {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 57.80869%;
   }
 }
@@ -684,7 +684,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .burrito {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 53.36467%;
   }
 }
@@ -701,7 +701,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 261, ../scss/style.scss */
   .eating .burrito {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 48.17103%;
   }
 }
@@ -759,7 +759,7 @@ button:disabled {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 82, ../scss/_mixins.scss */
   .book {
-    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 41.36352%;
   }
 }
