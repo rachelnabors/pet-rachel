@@ -1,0 +1,316 @@
+@import "variables";
+@import "helpers";
+// @import "breakpoint";
+@import "mixins";
+
+body {
+	background: $color-canvas;
+	color: $color-base;
+	font-family: sans-serif;
+	margin: 0; padding: 2%;
+	text-align: center;
+}
+
+.container {
+	max-width: $d_observationWindow;
+	margin: 0 auto;
+	position: relative;
+}
+
+.observation-window {
+	background: $color-base;
+	padding-top: percentage($d_observationWindow/$d_observationWindow-h); width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+button {
+	background: $cyan;
+	color: $lite_blue;
+	border: 2px;
+	border-radius: 2px;
+	font-family: monospace;
+	text-transform: uppercase;
+	&:disabled {
+		background: $grey;
+		color: $dark_grey;
+	}
+}
+
+@include create-prop(laptop, 304px, 827px);
+
+.laptop {
+	transition: transform 1s;
+}
+
+@include create-prop(body, 281px, 541px);
+
+@include create-prop(mouth, 143px, 231px, false, 500px, 504px);
+.mouth {
+	.rage-quit & {
+		@include use-sprite(mouth-grr);
+	}
+	.unhappy &,
+	.enraged & {
+		@include use-sprite(mouth-frown);
+	}
+	.joyous & {
+		@include use-sprite(mouth-smile);
+	}
+	.overjoyed &,
+	.happy & {
+		@include use-sprite(mouth-big-smile);
+	}
+}
+
+@include create-prop(eyes, 96px, 94px, false, 500px, 504px);
+.eyes {
+	.rage-quit &,
+	.enraged & {
+		@include use-sprite(eyes-angry);
+	}
+	.happy &,
+	.joyous &,
+	.overjoyed & {
+		@include use-sprite(eyes-happy);
+	}
+}
+
+.bored {
+	.body {
+		@include use-sprite(body-slumped);
+	}
+}
+
+@include create-prop(gurgle, 188px, 799px, true);
+@include create-prop(bags, 117px, 183px, true, 500px, 504px);
+@include create-prop(snore, 185px, 760px, true);
+
+.gurgle {
+	@extend %fadeIn;
+}
+
+.hungry {
+	.mouth {
+		@include use-sprite(mouth-urgh);
+	}
+	.gurgle {
+		animation: sideArc linear 2s infinite alternate,
+				   fadeInOut linear 3.5s infinite alternate;
+		opacity: 1;
+	}
+}
+
+@keyframes sideArc {
+	0% { transform: translate(0, 0); }
+	25% { transform: translate(-8%, 5%); }
+	50% { transform: translate(-10%, 10%); }
+	75% { transform: translate(-8%, 15%); }
+	100% { transform: translate(0, 20%); }
+}
+
+@keyframes fadeInOut {
+	33% { opacity: 0; }
+	75% { opacity: 1; }
+}
+
+.tired {
+	.bags {
+		opacity: 1;
+	}
+	&.happy,
+	&.joyous,
+	&.overjoyed {
+		.bags {
+			@include use-sprite(bags-open);
+		}
+	}
+	&.sleeping {
+		.bags {
+			@extend %fadedOut;
+		}
+	}
+}
+
+.sleeping {
+	.body {
+		@include use-sprite(body-slumped);
+	}
+	.mouth {
+		@include use-sprite(mouth-snore);
+	}
+	.eyes {
+		@include use-sprite(eyes-closed);
+	}
+	.snore {
+		animation: sideArc linear 2s infinite alternate,
+				   fadeInOut linear 3.5s infinite alternate;
+		opacity: 1;
+	}
+}
+
+.snore {
+	@extend %fadeIn;
+}
+
+@include create-prop(huff, 26px, 249px, true, 500px, 504px);
+
+.playing {
+	.body {
+		@include use-sprite(body-exercising);
+		animation: hArc linear alternate 1s infinite;
+	}
+	.mouth {
+		display: none;
+	}
+	.huff {
+		animation: sideArc linear 1s 4 alternate,
+				   fadeInOut linear 3.5s infinite alternate;
+		@extend %show;
+	}
+	.laptop {
+		transform: translateY(100%);
+	}
+}
+.huff {
+	@extend %fadeIn;
+}
+
+.forest {
+	perspective: 600px;
+	transition:
+		perspective 5s ease-in,
+		opacity 1s;
+	@extend %fadedOut;
+	width: 100%; height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	.playing & {
+		perspective: 800px;
+		@extend %show;
+	}
+}
+
+.forest-fg {
+	transform: translateZ(200px);
+	background:
+	linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 39%,rgba(255,255,255,0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/fg.svg") no-repeat;
+}
+
+.forest-mg {
+	transform: translateZ(125px);
+	background:
+	linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 49%,rgba(255,255,255,0) 100%),
+	url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/mg.svg") no-repeat;
+}
+
+.forest-bg {
+	transform: translateZ(50px);
+	background:
+	linear-gradient(to top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 59%,rgba(255,255,255,0) 100%),
+	url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg.svg") no-repeat;
+}
+
+.trees {
+	background-size: cover;
+	width: 100%; height: 100%;
+	position: absolute;
+}
+
+@keyframes hArc {
+	25% { transform: translate(-2%, -2%); }
+	25% { transform: translate(2%, -5%); }
+	75% { transform: translate(5%, 2%); }
+}
+
+@include create-prop(choco, 314px, 789px, true);
+.snacking {
+	.choco {
+		@include use-sprite(choco-bite);
+		@extend %show;
+		transform: translateY(0);
+		animation: flyingChoco linear 1 2s 3s forwards;
+	}
+	.laptop {
+		transform: translateY(50%);
+	}
+	.mouth {
+		animation:
+			eating steps(1,end) 1s 1s forwards,
+			hArc linear alternate 1s 2s infinite;
+	}
+}
+
+@keyframes flyingChoco {
+	0% { transform: translate(0, 0); }
+	100% { transform: translate(-40%, 40%); }
+}
+
+@include keyfriends(eating, mouth-eating2, mouth-eating1);
+.choco {
+	transform: translateY(200%);
+	transition:
+		opacity 1s ease-in,
+		transform 1s ease-in,
+		background-position 1s .25s steps(1, end);
+}
+
+
+@include create-prop(burrito, 251px, 741px, true);
+.eating {
+	.burrito {
+		@include use-sprite(burrito-bite);
+		@extend %show;
+		transform: translateY(0);
+		animation: flyingBurrito linear 1 2s 3s forwards;
+	}
+	.laptop {
+		transform: translateY(50%);
+	}
+	.mouth {
+		animation:
+			eating steps(1,end) 1s 1s forwards,
+			hArc linear alternate 1s 2s infinite;
+	}
+}
+
+@keyframes flyingBurrito {
+	0% { transform: translate(0, 0); }
+	100% { transform: translate(-40%, 40%); }
+}
+
+.burrito {
+	transform: translateY(200%);
+	transition:
+		opacity 1s ease-in,
+		transform 1s ease-in,
+		background-position 1s .25s steps(1, end);
+}
+
+@include create-prop(book, 351px, 1000px, true);
+.reading {
+	.book {
+		@extend %show;
+		animation: readBook 5s ease;
+	}
+}
+
+@keyframes readBook {
+	0% {transform: translateY(0);}
+	25% {transform: translateY(-100%);}
+	75% {transform: translateY(-100%);}
+	100% {transform: translateY(0);}
+}
+
+.state {
+	background: rgba($color-canvas, .5);
+	position: absolute;
+	top: 0; left: 0; width: 100%; height: 100%;
+	line-height: 100%;
+	font-size: 2em;
+	padding-top: 40%;
+	box-sizing: border-box;
+	button{
+		font-size: 1.5em;
+	}
+}

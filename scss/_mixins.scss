@@ -1,0 +1,92 @@
+// Retina media queries
+@mixin retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+// Position divs
+@mixin set-position($sX, $sY, $parent-width, $parent-height) {
+    left: percentage($sX/$parent-width);
+    top: percentage($sY/$parent-height);
+    position: absolute;
+}
+
+// Set height and width
+@mixin set-dimensions($width, $height, $parent-width) {
+    width: percentage($width/$parent-width);
+    padding-top: percentage($height/$parent-width);
+}
+
+// Handle background sizing
+@mixin set-bg-width($sprites-width, $sprite, $sprite-image) {
+    $spriteX: percentage($sprites-width / image-width(sprite-file($sprite, $sprite-image)));
+    background-size: $spriteX auto;
+}
+
+// Handle background images for retina and not
+// First define the folders where the sprites are and their layouts
+$spritesheet-use-percentages: true;
+$spritesheet-spacing: 2px;
+@import "spritesheet/*.png";
+$spritesheet-2x-use-percentages: true;
+$spritesheet-2x-spacing: 2px;
+@import "spritesheet-2x/*.png";
+$spritesheet-sprite-width: sprite-width($spritesheet-sprites);
+
+// Sprite mixin
+@mixin use-sprite($single-sprite) {
+	@include set-bg-width($spritesheet-sprite-width, $spritesheet-sprites, $single-sprite);
+	@include spritesheet-sprite($single-sprite);
+    @include retina {
+		background-image: sprite-url($spritesheet-2x-sprites);
+		background-position: sprite-position($spritesheet-2x-sprites, $single-sprite, 0, 0, true);
+    }
+}
+
+@mixin keyfriends($name, $spriteStart, $spriteEnd) {
+	$s2 : percentage(image-height(sprite-file($spritesheet-sprites, #{$spriteEnd}))/image-height(sprite-path($spritesheet-sprites)));
+	$sy: percentage(nth(sprite-position($spritesheet-sprites, $spriteStart),2)/image-height(sprite-path($spritesheet-sprites)));
+	@keyframes #{$name} {
+		0% {
+			background-position: sprite-position($spritesheet-sprites, $spriteStart, 0, 0, true);
+		}
+		100% {
+				background-position: 0 ($sy - (1.25*$s2));
+		}
+	}
+
+    @include retina {
+		$xs2 : percentage((image-height(sprite-file($spritesheet-2x-sprites, #{$spriteEnd})))/image-height(sprite-path($spritesheet-2x-sprites)));
+		$xsy: percentage((nth(sprite-position($spritesheet-2x-sprites, $spriteStart),2)*-1)/image-height(sprite-path($spritesheet-2x-sprites)));
+		@keyframes #{$name} {
+			0% {
+				background-position: sprite-position($spritesheet-2x-sprites, $spriteStart, 0, 0, true);
+			}
+			100% {
+				// position of first frame - 1.25 more;
+				background-position: 0 ($xsy - ($xs2/6));
+			}
+		}
+	}
+}
+
+// combine them all to create a prop
+@mixin create-prop($prop, $x, $y, $hidden: false, $parent-width: $d_observationWindow_hd, $parent-height: $d_observationWindow-h_hd) {
+    .#{$prop} {
+        $iWidth: image-width(sprite-file($spritesheet-2x-sprites, #{$prop}));
+        $iHeight: image-height(sprite-file($spritesheet-2x-sprites, #{$prop}));
+		@include set-dimensions($iWidth + 2px, $iHeight + 2px, $parent-width);
+		@include set-position($x, $y, $parent-width, $parent-height);
+		@include use-sprite($prop);
+		@if $hidden {
+			opacity: 0;
+		}
+    }
+}

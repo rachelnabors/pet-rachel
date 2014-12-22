@@ -1,0 +1,27 @@
+
+$black: #141f31;
+$dark_grey: #333b47;
+$grey: #5f697a;
+$bg_blue: #e3edf2;
+$lite_blue: #dfeff6; //more saturated
+$lime: #ced92e;
+$cyan: #0097c0; //a bit bright on the bg_blue
+$lavender: #a69feb;
+$mauve: #c774b3;
+$magenta: #e64988;
+$rust: #56001d;
+
+$link:$rust;
+$link-visited:darken($rust,10%);
+
+$color-canvas: $black;
+$color-base: $lite_blue;
+
+// Dimensions
+$d_observationWindow: 500px;
+$d_observationWindow_hd: $d_observationWindow * 2;
+$d_observationWindow-h: 500px;
+$d_observationWindow-h_hd: $d_observationWindow-h * 2;
+
+// Breakpoints
+// $bp_hd: (-webkit-min-device-pixel-ratio: 2, min-device-pixel-ratio: 2);

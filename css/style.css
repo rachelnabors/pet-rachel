@@ -1,0 +1,826 @@
+/* Image replacement */
+/* Clear Fix */
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 34, ../scss/_helpers.scss */
+.tired.sleeping .bags, .forest {
+  opacity: 0;
+}
+
+/* line 38, ../scss/_helpers.scss */
+.gurgle, .snore, .huff {
+  -webkit-transition: opacity .25s;
+          transition: opacity .25s;
+}
+
+/* line 42, ../scss/_helpers.scss */
+.playing .huff, .playing .forest, .snacking .choco, .eating .burrito, .reading .book {
+  opacity: 1;
+}
+
+/* line 256, spritesheet/*.png */
+.spritesheet-sprite, .laptop, .body, .mouth, .rage-quit .mouth, .unhappy .mouth, .enraged .mouth, .joyous .mouth, .overjoyed .mouth, .happy .mouth, .eyes, .rage-quit .eyes, .enraged .eyes, .happy .eyes, .joyous .eyes, .overjoyed .eyes, .bored .body, .gurgle, .bags, .snore, .hungry .mouth, .tired.happy .bags, .tired.joyous .bags, .tired.overjoyed .bags, .sleeping .body, .sleeping .mouth, .sleeping .eyes, .huff, .playing .body, .choco, .snacking .choco, .burrito, .eating .burrito, .book {
+  background-image: url('/img/spritesheet-s02e10d4fe9.png');
+  background-repeat: no-repeat;
+}
+
+/* line 256, spritesheet-2x/*.png */
+.spritesheet-2x-sprite {
+  background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+  background-repeat: no-repeat;
+}
+
+/* line 6, ../scss/style.scss */
+body {
+  background: #141f31;
+  color: #dfeff6;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 2%;
+  text-align: center;
+}
+
+/* line 14, ../scss/style.scss */
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 20, ../scss/style.scss */
+.observation-window {
+  background: #dfeff6;
+  padding-top: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 27, ../scss/style.scss */
+button {
+  background: #0097c0;
+  color: #dfeff6;
+  border: 2px;
+  border-radius: 2px;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+/* line 34, ../scss/style.scss */
+button:disabled {
+  background: #5f697a;
+  color: #333b47;
+}
+
+/* line 82, ../scss/_mixins.scss */
+.laptop {
+  width: 29.6%;
+  padding-top: 20.7%;
+  left: 30.4%;
+  top: 82.7%;
+  position: absolute;
+  background-size: 170.06803% auto;
+  background-position: 0 85.32423%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .laptop {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 85.61898%;
+  }
+}
+
+/* line 42, ../scss/style.scss */
+.laptop {
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+
+/* line 82, ../scss/_mixins.scss */
+.body {
+  width: 50.2%;
+  padding-top: 50.6%;
+  left: 28.1%;
+  top: 54.1%;
+  position: absolute;
+  background-size: 100% auto;
+  background-position: 0 29.653%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .body {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 29.8826%;
+  }
+}
+
+/* line 82, ../scss/_mixins.scss */
+.mouth {
+  width: 18.6%;
+  padding-top: 11.6%;
+  left: 28.6%;
+  top: 45.83333%;
+  position: absolute;
+  background-size: 543.47826% auto;
+  background-position: 0 98.54186%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .mouth {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 98.57007%;
+  }
+}
+
+/* line 50, ../scss/style.scss */
+.rage-quit .mouth {
+  background-size: 543.47826% auto;
+  background-position: 0 92.89746%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 50, ../scss/style.scss */
+  .rage-quit .mouth {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 93.04099%;
+  }
+}
+/* line 53, ../scss/style.scss */
+.unhappy .mouth, .enraged .mouth {
+  background-size: 543.47826% auto;
+  background-position: 0 91.48636%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 53, ../scss/style.scss */
+  .unhappy .mouth, .enraged .mouth {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 91.65872%;
+  }
+}
+/* line 57, ../scss/style.scss */
+.joyous .mouth {
+  background-size: 543.47826% auto;
+  background-position: 0 94.30856%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 57, ../scss/style.scss */
+  .joyous .mouth {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 94.42326%;
+  }
+}
+/* line 60, ../scss/style.scss */
+.overjoyed .mouth, .happy .mouth {
+  background-size: 543.47826% auto;
+  background-position: 0 87.25306%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 60, ../scss/style.scss */
+  .overjoyed .mouth, .happy .mouth {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 87.51192%;
+  }
+}
+
+/* line 82, ../scss/_mixins.scss */
+.eyes {
+  width: 37.6%;
+  padding-top: 28.4%;
+  left: 19.2%;
+  top: 18.65079%;
+  position: absolute;
+  background-size: 268.8172% auto;
+  background-position: 0 75.19194%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .eyes {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 75.55934%;
+  }
+}
+
+/* line 68, ../scss/style.scss */
+.rage-quit .eyes, .enraged .eyes {
+  background-size: 268.8172% auto;
+  background-position: 0 64.82726%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 68, ../scss/style.scss */
+  .rage-quit .eyes, .enraged .eyes {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 65.19942%;
+  }
+}
+/* line 72, ../scss/style.scss */
+.happy .eyes, .joyous .eyes, .overjoyed .eyes {
+  background-size: 268.8172% auto;
+  background-position: 0 71.73704%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 72, ../scss/style.scss */
+  .happy .eyes, .joyous .eyes, .overjoyed .eyes {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 72.10603%;
+  }
+}
+
+/* line 80, ../scss/style.scss */
+.bored .body {
+  background-size: 100% auto;
+  background-position: 0 16.29863%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 80, ../scss/style.scss */
+  .bored .body {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 16.38207%;
+  }
+}
+
+/* line 82, ../scss/_mixins.scss */
+.gurgle {
+  width: 18.8%;
+  padding-top: 15.3%;
+  left: 18.8%;
+  top: 79.9%;
+  position: absolute;
+  background-size: 268.8172% auto;
+  background-position: 0 78.87392%;
+  opacity: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .gurgle {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 79.22458%;
+  }
+}
+
+/* line 82, ../scss/_mixins.scss */
+.bags {
+  width: 26%;
+  padding-top: 10.8%;
+  left: 23.4%;
+  top: 36.30952%;
+  position: absolute;
+  background-size: 390.625% auto;
+  background-position: 0 1.31579%;
+  opacity: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .bags {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 1.28571%;
+  }
+}
+
+/* line 82, ../scss/_mixins.scss */
+.snore {
+  width: 16.6%;
+  padding-top: 6%;
+  left: 18.5%;
+  top: 76%;
+  position: absolute;
+  background-size: 304.87805% auto;
+  background-position: 0 100%;
+  opacity: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .snore {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 100%;
+  }
+}
+
+/* line 94, ../scss/style.scss */
+.hungry .mouth {
+  background-size: 543.47826% auto;
+  background-position: 0 97.13076%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 94, ../scss/style.scss */
+  .hungry .mouth {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 97.1878%;
+  }
+}
+/* line 97, ../scss/style.scss */
+.hungry .gurgle {
+  -webkit-animation: sideArc linear 2s infinite alternate, fadeInOut linear 3.5s infinite alternate;
+          animation: sideArc linear 2s infinite alternate, fadeInOut linear 3.5s infinite alternate;
+  opacity: 1;
+}
+
+@-webkit-keyframes sideArc {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(-8%, 5%);
+            transform: translate(-8%, 5%);
+  }
+  50% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+  75% {
+    -webkit-transform: translate(-8%, 15%);
+            transform: translate(-8%, 15%);
+  }
+  100% {
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
+  }
+}
+
+@keyframes sideArc {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(-8%, 5%);
+            transform: translate(-8%, 5%);
+  }
+  50% {
+    -webkit-transform: translate(-10%, 10%);
+            transform: translate(-10%, 10%);
+  }
+  75% {
+    -webkit-transform: translate(-8%, 15%);
+            transform: translate(-8%, 15%);
+  }
+  100% {
+    -webkit-transform: translate(0, 20%);
+            transform: translate(0, 20%);
+  }
+}
+@-webkit-keyframes fadeInOut {
+  33% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+@keyframes fadeInOut {
+  33% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+/* line 118, ../scss/style.scss */
+.tired .bags {
+  opacity: 1;
+}
+/* line 124, ../scss/style.scss */
+.tired.happy .bags, .tired.joyous .bags, .tired.overjoyed .bags {
+  background-size: 390.625% auto;
+  background-position: 0 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 124, ../scss/style.scss */
+  .tired.happy .bags, .tired.joyous .bags, .tired.overjoyed .bags {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 0;
+  }
+}
+
+/* line 136, ../scss/style.scss */
+.sleeping .body {
+  background-size: 100% auto;
+  background-position: 0 16.29863%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 136, ../scss/style.scss */
+  .sleeping .body {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 16.38207%;
+  }
+}
+/* line 139, ../scss/style.scss */
+.sleeping .mouth {
+  background-size: 543.47826% auto;
+  background-position: 0 95.71966%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 139, ../scss/style.scss */
+  .sleeping .mouth {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 95.80553%;
+  }
+}
+/* line 142, ../scss/style.scss */
+.sleeping .eyes {
+  background-size: 268.8172% auto;
+  background-position: 0 68.28215%;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 142, ../scss/style.scss */
+  .sleeping .eyes {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 68.65272%;
+  }
+}
+/* line 145, ../scss/style.scss */
+.sleeping .snore {
+  -webkit-animation: sideArc linear 2s infinite alternate, fadeInOut linear 3.5s infinite alternate;
+          animation: sideArc linear 2s infinite alternate, fadeInOut linear 3.5s infinite alternate;
+  opacity: 1;
+}
+
+/* line 82, ../scss/_mixins.scss */
+.huff {
+  width: 20.2%;
+  padding-top: 12.6%;
+  left: 5.2%;
+  top: 49.40476%;
+  position: absolute;
+  background-size: 500% auto;
+  background-position: 0 80.87612%;
+  opacity: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .huff {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 81.17394%;
+  }
+}
+
+/* line 159, ../scss/style.scss */
+.playing .body {
+  background-size: 100% auto;
+  background-position: 0 2.94427%;
+  -webkit-animation: hArc linear alternate 1s infinite;
+          animation: hArc linear alternate 1s infinite;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 159, ../scss/style.scss */
+  .playing .body {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 2.88154%;
+  }
+}
+/* line 163, ../scss/style.scss */
+.playing .mouth {
+  display: none;
+}
+/* line 166, ../scss/style.scss */
+.playing .huff {
+  -webkit-animation: sideArc linear 1s 4 alternate, fadeInOut linear 3.5s infinite alternate;
+          animation: sideArc linear 1s 4 alternate, fadeInOut linear 3.5s infinite alternate;
+}
+/* line 171, ../scss/style.scss */
+.playing .laptop {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+/* line 179, ../scss/style.scss */
+.forest {
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  -webkit-transition: -webkit-perspective 5s ease-in, opacity 1s;
+          transition: perspective 5s ease-in, opacity 1s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 188, ../scss/style.scss */
+.playing .forest {
+  -webkit-perspective: 800px;
+          perspective: 800px;
+}
+
+/* line 194, ../scss/style.scss */
+.forest-fg {
+  -webkit-transform: translateZ(200px);
+          transform: translateZ(200px);
+  background: -webkit-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/fg.svg") no-repeat;
+  background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/fg.svg") no-repeat;
+}
+
+/* line 200, ../scss/style.scss */
+.forest-mg {
+  -webkit-transform: translateZ(125px);
+          transform: translateZ(125px);
+  background: -webkit-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/mg.svg") no-repeat;
+  background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/mg.svg") no-repeat;
+}
+
+/* line 207, ../scss/style.scss */
+.forest-bg {
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+  background: -webkit-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg.svg") no-repeat;
+  background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg.svg") no-repeat;
+}
+
+/* line 214, ../scss/style.scss */
+.trees {
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@-webkit-keyframes hArc {
+  25% {
+    -webkit-transform: translate(-2%, -2%);
+            transform: translate(-2%, -2%);
+  }
+  25% {
+    -webkit-transform: translate(2%, -5%);
+            transform: translate(2%, -5%);
+  }
+  75% {
+    -webkit-transform: translate(5%, 2%);
+            transform: translate(5%, 2%);
+  }
+}
+
+@keyframes hArc {
+  25% {
+    -webkit-transform: translate(-2%, -2%);
+            transform: translate(-2%, -2%);
+  }
+  25% {
+    -webkit-transform: translate(2%, -5%);
+            transform: translate(2%, -5%);
+  }
+  75% {
+    -webkit-transform: translate(5%, 2%);
+            transform: translate(5%, 2%);
+  }
+}
+/* line 82, ../scss/_mixins.scss */
+.choco {
+  width: 20.9%;
+  padding-top: 15.6%;
+  left: 31.4%;
+  top: 78.9%;
+  position: absolute;
+  background-size: 240.38462% auto;
+  background-position: 0 61.24218%;
+  opacity: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .choco {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 61.61542%;
+  }
+}
+
+/* line 228, ../scss/style.scss */
+.snacking .choco {
+  background-size: 240.38462% auto;
+  background-position: 0 57.43861%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: flyingChoco linear 1 2s 3s forwards;
+          animation: flyingChoco linear 1 2s 3s forwards;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 228, ../scss/style.scss */
+  .snacking .choco {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 57.80869%;
+  }
+}
+/* line 234, ../scss/style.scss */
+.snacking .laptop {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+/* line 237, ../scss/style.scss */
+.snacking .mouth {
+  -webkit-animation: eating steps(1, end) 1s 1s forwards, hArc linear alternate 1s 2s infinite;
+          animation: eating steps(1, end) 1s 1s forwards, hArc linear alternate 1s 2s infinite;
+}
+
+@-webkit-keyframes flyingChoco {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-40%, 40%);
+            transform: translate(-40%, 40%);
+  }
+}
+
+@keyframes flyingChoco {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-40%, 40%);
+            transform: translate(-40%, 40%);
+  }
+}
+@-webkit-keyframes eating {
+  0% {
+    background-position: 0 90.07526%;
+  }
+  100% {
+    background-position: 0 -90.52925%;
+  }
+}
+@keyframes eating {
+  0% {
+    background-position: 0 90.07526%;
+  }
+  100% {
+    background-position: 0 -90.52925%;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  @-webkit-keyframes eating {
+    0% {
+      background-position: 0 90.27645%;
+    }
+    100% {
+      background-position: 0 88.86798%;
+    }
+  }
+  @keyframes eating {
+    0% {
+      background-position: 0 90.27645%;
+    }
+    100% {
+      background-position: 0 88.86798%;
+    }
+  }
+}
+/* line 250, ../scss/style.scss */
+.choco {
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
+  -webkit-transition: opacity 1s ease-in, -webkit-transform 1s ease-in, background-position 1s 0.25s steps(1, end);
+          transition: opacity 1s ease-in, transform 1s ease-in, background-position 1s 0.25s steps(1, end);
+}
+
+/* line 82, ../scss/_mixins.scss */
+.burrito {
+  width: 20.4%;
+  padding-top: 21.2%;
+  left: 25.1%;
+  top: 74.1%;
+  position: absolute;
+  background-size: 247.52475% auto;
+  background-position: 0 53.00146%;
+  opacity: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .burrito {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 53.36467%;
+  }
+}
+
+/* line 261, ../scss/style.scss */
+.eating .burrito {
+  background-size: 250% auto;
+  background-position: 0 47.83033%;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-animation: flyingBurrito linear 1 2s 3s forwards;
+          animation: flyingBurrito linear 1 2s 3s forwards;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 261, ../scss/style.scss */
+  .eating .burrito {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 48.17103%;
+  }
+}
+/* line 267, ../scss/style.scss */
+.eating .laptop {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+/* line 270, ../scss/style.scss */
+.eating .mouth {
+  -webkit-animation: eating steps(1, end) 1s 1s forwards, hArc linear alternate 1s 2s infinite;
+          animation: eating steps(1, end) 1s 1s forwards, hArc linear alternate 1s 2s infinite;
+}
+
+@-webkit-keyframes flyingBurrito {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-40%, 40%);
+            transform: translate(-40%, 40%);
+  }
+}
+
+@keyframes flyingBurrito {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-40%, 40%);
+            transform: translate(-40%, 40%);
+  }
+}
+/* line 282, ../scss/style.scss */
+.burrito {
+  -webkit-transform: translateY(200%);
+          transform: translateY(200%);
+  -webkit-transition: opacity 1s ease-in, -webkit-transform 1s ease-in, background-position 1s 0.25s steps(1, end);
+          transition: opacity 1s ease-in, transform 1s ease-in, background-position 1s 0.25s steps(1, end);
+}
+
+/* line 82, ../scss/_mixins.scss */
+.book {
+  width: 23.8%;
+  padding-top: 32.3%;
+  left: 35.1%;
+  top: 100%;
+  position: absolute;
+  background-size: 211.86441% auto;
+  background-position: 0 41.04365%;
+  opacity: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 82, ../scss/_mixins.scss */
+  .book {
+    background-image: url('/img/spritesheet-2x-sdd0bb7a30f.png');
+    background-position: 0 41.36352%;
+  }
+}
+
+/* line 292, ../scss/style.scss */
+.reading .book {
+  -webkit-animation: readBook 5s ease;
+          animation: readBook 5s ease;
+}
+
+@-webkit-keyframes readBook {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  75% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes readBook {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  75% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+/* line 305, ../scss/style.scss */
+.state {
+  background: rgba(20, 31, 49, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 100%;
+  font-size: 2em;
+  padding-top: 40%;
+  box-sizing: border-box;
+}
+/* line 313, ../scss/style.scss */
+.state button {
+  font-size: 1.5em;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>A Game of Work/Life Balance</title>
+        <meta name="viewport" content="width=device-width initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="meters" role="status" aria-label="Levels of Contentment">
+                <label for="meter-rest">Alertness</label>
+                <meter id="meter-rest" min="0" low="1" optimum="2" high="3" max="3" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-live="assertive"></meter>
+                <label for="meter-hunger">Fullness</label>
+                <meter id="meter-hunger" min="0" low="1" optimum="2" high="3" max="3" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-live="assertive"></meter>
+                <label for="meter-engagement">Engagement</label>
+                <meter id="meter-engagement" min="0" low="1" optimum="2" high="3" max="3" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-live="assertive"></meter>
+
+            </div>
+            <div class="observation-window">
+                <div class="forest">
+                  <div class="forest-bg trees"></div>
+                  <div class="forest-mg trees"></div>
+                  <div class="forest-fg trees"></div>
+                </div>
+                <div id="character" class="body">
+                    <div class="bags"></div>
+                    <div class="eyes"></div>
+                    <div class="mouth"></div>
+                    <div class="huff"></div>
+                </div>
+                <div class="book"></div>
+                <div class="laptop"></div>
+                <div class="snore"></div>
+                <div class="gurgle"></div>
+                <div class="choco"></div>
+                <div class="burrito"></div>
+            </div>
+            <div id="controls" role="menu" aria-label="Things you can do:">
+                <button id="meal" aria-controls="meter-hunger meter-rest" title="feed a meal"disabled>Full Meal</button>
+                <button id="snack" aria-controls="meter-hunger meter-rest" title="feed a snack" disabled>Snack</button>
+                <button id="sleep" title="put to bed" disabled>Sleep</button>
+                <button id="play" title="go for a jog" disabled>Exercise</button>
+                <button id="read" title="read a book" disabled>Read</button>
+            </div>
+            <div id="winState" class="state" hidden role="alert" aria-live="assertive">
+                <p>You acheived work/life balance!</p>
+                <button id="playAgain">Play again!</button>
+            </div>
+            <div id="loseState" class="state" hidden role="alert" aria-live="assertive">
+                <p>Rachel rage quit.</p>
+                <button id="tryAgain">Try again?</button>
+            </div>
+        </div>
+        <script src="js/core.js"></script>
+    </body>
+</html>
