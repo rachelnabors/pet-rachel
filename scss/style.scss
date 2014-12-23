@@ -17,6 +17,9 @@ a {
 	transition: color $timing-function-custom .25s;
 	text-decoration: none;
 	border-bottom: currentColor dotted 1px;
+	.addthis_sharing_toolbox & {
+		border: 0;
+	}
 }
 
 a:link {

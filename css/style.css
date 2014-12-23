@@ -51,57 +51,61 @@ a {
   text-decoration: none;
   border-bottom: currentColor dotted 1px;
 }
+/* line 20, ../scss/style.scss */
+.addthis_sharing_toolbox a {
+  border: 0;
+}
 
-/* line 22, ../scss/style.scss */
+/* line 25, ../scss/style.scss */
 a:link {
   color: #0097c0;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 29, ../scss/style.scss */
 a:visited {
   color: #a69feb;
 }
 
-/* line 30, ../scss/style.scss */
+/* line 33, ../scss/style.scss */
 a:hover, a:active, a:focus {
   color: #e64988;
 }
 
-/* line 34, ../scss/style.scss */
+/* line 37, ../scss/style.scss */
 .container {
   max-width: 500px;
   margin: 0 auto;
   position: relative;
 }
 
-/* line 40, ../scss/style.scss */
+/* line 43, ../scss/style.scss */
 h1, footer {
   font-weight: 100;
 }
 
-/* line 44, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 small {
   font-size: .75em;
 }
 
-/* line 46, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 .meters, #controls {
   margin: 1em 0;
 }
 
-/* line 48, ../scss/style.scss */
+/* line 51, ../scss/style.scss */
 .meter {
   display: inline-block;
   margin: 0 1%;
   max-width: 30%;
 }
 
-/* line 54, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 label {
   display: block;
 }
 
-/* line 56, ../scss/style.scss */
+/* line 59, ../scss/style.scss */
 .observation-window {
   background: #dfeff6;
   padding-top: 100%;
@@ -110,7 +114,7 @@ label {
   position: relative;
 }
 
-/* line 63, ../scss/style.scss */
+/* line 66, ../scss/style.scss */
 .state {
   background: rgba(20, 31, 49, 0.95);
   box-sizing: border-box;
@@ -125,21 +129,21 @@ label {
   -webkit-transition-duration: 2s;
           transition-duration: 2s;
 }
-/* line 75, ../scss/style.scss */
+/* line 78, ../scss/style.scss */
 .state button {
   font-size: 1.5em;
 }
-/* line 78, ../scss/style.scss */
+/* line 81, ../scss/style.scss */
 .state p {
   max-width: 400px;
 }
 
-/* line 81, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
 .note {
   font-size: .8em;
 }
 
-/* line 90, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 img {
   display: block;
   margin: 0 auto 1em;
@@ -147,7 +151,7 @@ img {
   max-width: 100%;
 }
 
-/* line 97, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 button {
   background: #0097c0;
   color: #dfeff6;
@@ -160,7 +164,7 @@ button {
   margin: 0 .25em;
   text-transform: uppercase;
 }
-/* line 108, ../scss/style.scss */
+/* line 111, ../scss/style.scss */
 button:disabled {
   background: #5f697a;
   color: #333b47;
@@ -184,7 +188,7 @@ button:disabled {
   }
 }
 
-/* line 116, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 .laptop {
   -webkit-transition: -webkit-transform 1s;
           transition: transform 1s;
@@ -226,49 +230,49 @@ button:disabled {
   }
 }
 
-/* line 124, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 .rage-quit .mouth {
   background-size: 543.47826% auto;
   background-position: 0 92.89746%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 124, ../scss/style.scss */
+  /* line 127, ../scss/style.scss */
   .rage-quit .mouth {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 93.04099%;
   }
 }
-/* line 127, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .unhappy .mouth, .enraged .mouth {
   background-size: 543.47826% auto;
   background-position: 0 91.48636%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 127, ../scss/style.scss */
+  /* line 130, ../scss/style.scss */
   .unhappy .mouth, .enraged .mouth {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 91.65872%;
   }
 }
-/* line 131, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 .joyous .mouth {
   background-size: 543.47826% auto;
   background-position: 0 94.30856%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 131, ../scss/style.scss */
+  /* line 134, ../scss/style.scss */
   .joyous .mouth {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 94.42326%;
   }
 }
-/* line 134, ../scss/style.scss */
+/* line 137, ../scss/style.scss */
 .overjoyed .mouth, .happy .mouth {
   background-size: 543.47826% auto;
   background-position: 0 87.25306%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 134, ../scss/style.scss */
+  /* line 137, ../scss/style.scss */
   .overjoyed .mouth, .happy .mouth {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 87.51192%;
@@ -293,38 +297,38 @@ button:disabled {
   }
 }
 
-/* line 142, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .rage-quit .eyes, .enraged .eyes {
   background-size: 268.8172% auto;
   background-position: 0 64.82726%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 142, ../scss/style.scss */
+  /* line 145, ../scss/style.scss */
   .rage-quit .eyes, .enraged .eyes {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 65.19942%;
   }
 }
-/* line 146, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 .happy .eyes, .joyous .eyes, .overjoyed .eyes {
   background-size: 268.8172% auto;
   background-position: 0 71.73704%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 146, ../scss/style.scss */
+  /* line 149, ../scss/style.scss */
   .happy .eyes, .joyous .eyes, .overjoyed .eyes {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 72.10603%;
   }
 }
 
-/* line 154, ../scss/style.scss */
+/* line 157, ../scss/style.scss */
 .bored .body {
   background-size: 100% auto;
   background-position: 0 16.29863%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 154, ../scss/style.scss */
+  /* line 157, ../scss/style.scss */
   .bored .body {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 16.38207%;
@@ -388,19 +392,19 @@ button:disabled {
   }
 }
 
-/* line 168, ../scss/style.scss */
+/* line 171, ../scss/style.scss */
 .hungry .mouth {
   background-size: 543.47826% auto;
   background-position: 0 97.13076%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 168, ../scss/style.scss */
+  /* line 171, ../scss/style.scss */
   .hungry .mouth {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 97.1878%;
   }
 }
-/* line 171, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .hungry .gurgle {
   -webkit-animation: sideArc linear 2s infinite alternate, fadeInOut linear 3.5s infinite alternate;
           animation: sideArc linear 2s infinite alternate, fadeInOut linear 3.5s infinite alternate;
@@ -468,60 +472,60 @@ button:disabled {
     opacity: 1;
   }
 }
-/* line 192, ../scss/style.scss */
+/* line 195, ../scss/style.scss */
 .tired .bags {
   opacity: 1;
 }
-/* line 198, ../scss/style.scss */
+/* line 201, ../scss/style.scss */
 .tired.happy .bags, .tired.joyous .bags, .tired.overjoyed .bags {
   background-size: 390.625% auto;
   background-position: 0 0;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 198, ../scss/style.scss */
+  /* line 201, ../scss/style.scss */
   .tired.happy .bags, .tired.joyous .bags, .tired.overjoyed .bags {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 0;
   }
 }
 
-/* line 210, ../scss/style.scss */
+/* line 213, ../scss/style.scss */
 .sleeping .body {
   background-size: 100% auto;
   background-position: 0 16.29863%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 210, ../scss/style.scss */
+  /* line 213, ../scss/style.scss */
   .sleeping .body {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 16.38207%;
   }
 }
-/* line 213, ../scss/style.scss */
+/* line 216, ../scss/style.scss */
 .sleeping .mouth {
   background-size: 543.47826% auto;
   background-position: 0 95.71966%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 213, ../scss/style.scss */
+  /* line 216, ../scss/style.scss */
   .sleeping .mouth {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 95.80553%;
   }
 }
-/* line 216, ../scss/style.scss */
+/* line 219, ../scss/style.scss */
 .sleeping .eyes {
   background-size: 268.8172% auto;
   background-position: 0 68.28215%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 216, ../scss/style.scss */
+  /* line 219, ../scss/style.scss */
   .sleeping .eyes {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 68.65272%;
   }
 }
-/* line 219, ../scss/style.scss */
+/* line 222, ../scss/style.scss */
 .sleeping .snore {
   -webkit-animation: sideArc linear 2s infinite alternate, fadeInOut linear 3.5s infinite alternate;
           animation: sideArc linear 2s infinite alternate, fadeInOut linear 3.5s infinite alternate;
@@ -547,7 +551,7 @@ button:disabled {
   }
 }
 
-/* line 233, ../scss/style.scss */
+/* line 236, ../scss/style.scss */
 .playing .body {
   background-size: 100% auto;
   background-position: 0 2.94427%;
@@ -555,28 +559,28 @@ button:disabled {
           animation: hArc linear alternate 1s infinite;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 233, ../scss/style.scss */
+  /* line 236, ../scss/style.scss */
   .playing .body {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 2.88154%;
   }
 }
-/* line 237, ../scss/style.scss */
+/* line 240, ../scss/style.scss */
 .playing .mouth {
   display: none;
 }
-/* line 240, ../scss/style.scss */
+/* line 243, ../scss/style.scss */
 .playing .huff {
   -webkit-animation: sideArc linear 1s 4 alternate, fadeInOut linear 3.5s infinite alternate;
           animation: sideArc linear 1s 4 alternate, fadeInOut linear 3.5s infinite alternate;
 }
-/* line 245, ../scss/style.scss */
+/* line 248, ../scss/style.scss */
 .playing .laptop {
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
 }
 
-/* line 253, ../scss/style.scss */
+/* line 256, ../scss/style.scss */
 .forest {
   -webkit-perspective: 600px;
           perspective: 600px;
@@ -588,13 +592,13 @@ button:disabled {
   top: 0;
   left: 0;
 }
-/* line 262, ../scss/style.scss */
+/* line 265, ../scss/style.scss */
 .playing .forest {
   -webkit-perspective: 800px;
           perspective: 800px;
 }
 
-/* line 268, ../scss/style.scss */
+/* line 271, ../scss/style.scss */
 .forest-fg {
   -webkit-transform: translateZ(200px);
           transform: translateZ(200px);
@@ -602,7 +606,7 @@ button:disabled {
   background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/fg.svg") no-repeat;
 }
 
-/* line 274, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 .forest-mg {
   -webkit-transform: translateZ(125px);
           transform: translateZ(125px);
@@ -610,7 +614,7 @@ button:disabled {
   background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0) 49%, rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/mg.svg") no-repeat;
 }
 
-/* line 281, ../scss/style.scss */
+/* line 284, ../scss/style.scss */
 .forest-bg {
   -webkit-transform: translateZ(50px);
           transform: translateZ(50px);
@@ -618,7 +622,7 @@ button:disabled {
   background: linear-gradient(to top, white 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0) 100%), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg.svg") no-repeat;
 }
 
-/* line 288, ../scss/style.scss */
+/* line 291, ../scss/style.scss */
 .trees {
   background-size: cover;
   width: 100%;
@@ -674,7 +678,7 @@ button:disabled {
   }
 }
 
-/* line 302, ../scss/style.scss */
+/* line 305, ../scss/style.scss */
 .snacking .choco {
   background-size: 240.38462% auto;
   background-position: 0 57.43861%;
@@ -684,18 +688,18 @@ button:disabled {
           animation: flyingChoco linear 1 2s 3s forwards;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 302, ../scss/style.scss */
+  /* line 305, ../scss/style.scss */
   .snacking .choco {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 57.80869%;
   }
 }
-/* line 308, ../scss/style.scss */
+/* line 311, ../scss/style.scss */
 .snacking .laptop {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
 }
-/* line 311, ../scss/style.scss */
+/* line 314, ../scss/style.scss */
 .snacking .mouth {
   -webkit-animation: eating steps(1, end) 1s 1s forwards, hArc linear alternate 1s 2s infinite;
           animation: eating steps(1, end) 1s 1s forwards, hArc linear alternate 1s 2s infinite;
@@ -756,7 +760,7 @@ button:disabled {
     }
   }
 }
-/* line 324, ../scss/style.scss */
+/* line 327, ../scss/style.scss */
 .choco {
   -webkit-transform: translateY(200%);
           transform: translateY(200%);
@@ -783,7 +787,7 @@ button:disabled {
   }
 }
 
-/* line 335, ../scss/style.scss */
+/* line 338, ../scss/style.scss */
 .eating .burrito {
   background-size: 250% auto;
   background-position: 0 47.83033%;
@@ -793,18 +797,18 @@ button:disabled {
           animation: flyingBurrito linear 1 2s 3s forwards;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 335, ../scss/style.scss */
+  /* line 338, ../scss/style.scss */
   .eating .burrito {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 48.17103%;
   }
 }
-/* line 341, ../scss/style.scss */
+/* line 344, ../scss/style.scss */
 .eating .laptop {
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
 }
-/* line 344, ../scss/style.scss */
+/* line 347, ../scss/style.scss */
 .eating .mouth {
   -webkit-animation: eating steps(1, end) 1s 1s forwards, hArc linear alternate 1s 2s infinite;
           animation: eating steps(1, end) 1s 1s forwards, hArc linear alternate 1s 2s infinite;
@@ -831,7 +835,7 @@ button:disabled {
             transform: translate(-40%, 40%);
   }
 }
-/* line 356, ../scss/style.scss */
+/* line 359, ../scss/style.scss */
 .burrito {
   -webkit-transform: translateY(200%);
           transform: translateY(200%);
@@ -858,7 +862,7 @@ button:disabled {
   }
 }
 
-/* line 366, ../scss/style.scss */
+/* line 369, ../scss/style.scss */
 .reading .book {
   -webkit-animation: readBook 5s ease;
           animation: readBook 5s ease;
