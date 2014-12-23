@@ -2,13 +2,33 @@
 @import "helpers";
 // @import "breakpoint";
 @import "mixins";
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400|Source+Serif+Pro:700);
 
 body {
 	background: $color-canvas;
 	color: $color-base;
-	font-family: sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
 	margin: 0; padding: 2%;
 	text-align: center;
+}
+
+a {
+	transition: color $timing-function-custom .25s;
+	text-decoration: none;
+	border-bottom: currentColor dotted 1px;
+}
+
+a:link {
+	color: $link;
+}
+
+a:visited {
+	color: $link-visited;
+}
+
+a:hover, a:active, a:focus {
+	color: $link-active;
 }
 
 .container {
@@ -17,6 +37,22 @@ body {
 	position: relative;
 }
 
+h1, footer {
+	font-weight: 100;
+}
+
+small { font-size: .75em;}
+
+.meters, #controls { margin: 1em 0;}
+
+.meter {
+	display: inline-block;
+	margin: 0 1%;
+	max-width: 30%;
+}
+
+label { display: block;}
+
 .observation-window {
 	background: $color-base;
 	padding-top: percentage($d_observationWindow/$d_observationWindow-h); width: 100%;
@@ -24,12 +60,50 @@ body {
 	position: relative;
 }
 
+.state {
+	background: rgba($color-canvas, .95);
+	box-sizing: border-box;
+	@extend %fadedOut;
+	@extend %fadeIn;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	padding: 10% 2em;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%; min-height: 100%;
+	transition-duration: 2s;
+	button{
+		font-size: 1.5em;
+	}
+	p { max-width: $d_observationWindow * .8;}
+}
+
+.note {
+	font-size: .8em;
+}
+
+.overjoyed #winState,
+.rage-quit #loseState {
+	@extend %show;
+}
+
+img {
+	display: block;
+	margin: 0 auto 1em;
+	max-height: 40%;
+	max-width: 100%;
+}
+
 button {
 	background: $cyan;
 	color: $lite_blue;
 	border: 2px;
 	border-radius: 2px;
-	font-family: monospace;
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding: .25em 1em;
+	margin: 0 .25em;
 	text-transform: uppercase;
 	&:disabled {
 		background: $grey;
@@ -300,17 +374,4 @@ button {
 	25% {transform: translateY(-100%);}
 	75% {transform: translateY(-100%);}
 	100% {transform: translateY(0);}
-}
-
-.state {
-	background: rgba($color-canvas, .5);
-	position: absolute;
-	top: 0; left: 0; width: 100%; height: 100%;
-	line-height: 100%;
-	font-size: 2em;
-	padding-top: 40%;
-	box-sizing: border-box;
-	button{
-		font-size: 1.5em;
-	}
 }

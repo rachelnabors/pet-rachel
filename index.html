@@ -10,12 +10,18 @@
 	<body>
 		<div class="container">
 			<div class="meters" role="status" aria-label="Levels of Contentment">
-				<label for="meter-rest">Alertness</label>
-				<meter id="meter-rest" min="0" low="1" optimum="2" high="3" max="3" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-live="assertive"></meter>
-				<label for="meter-hunger">Fullness</label>
-				<meter id="meter-hunger" min="0" low="1" optimum="2" high="3" max="3" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-live="assertive"></meter>
-				<label for="meter-engagement">Engagement</label>
-				<meter id="meter-engagement" min="0" low="1" optimum="2" high="3" max="3" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-live="assertive"></meter>
+				<div class="meter">
+					<label for="meter-rest">Alertness</label>
+					<meter id="meter-rest" min="0" low="1" optimum="2" high="3" max="3" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-live="assertive"></meter>
+				</div>
+				<div class="meter">
+					<label for="meter-hunger">Fullness</label>
+					<meter id="meter-hunger" min="0" low="1" optimum="2" high="3" max="3" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-live="assertive"></meter>
+				</div>
+				<div class="meter">
+					<label for="meter-engagement">Engagement</label>
+					<meter id="meter-engagement" min="0" low="1" optimum="2" high="3" max="3" role="progressbar" aria-valuemin="0" aria-valuemax="3" aria-live="assertive"></meter>
+				</div>
 
 			</div>
 			<div class="observation-window">
@@ -44,19 +50,34 @@
 				<button id="play" title="go for a jog" disabled>Exercise</button>
 				<button id="read" title="read a book" disabled>Read</button>
 			</div>
+			<audio id="audio" preload="auto" loop>
+				<source src="audio/typing.mp3" type="audio/mp3" />
+				<source src="audio/typing.ogg" type="audio/ogg" />
+			</audio>
 			<div id="winState" class="state" hidden role="alert" aria-live="assertive">
-				<p>You acheived work/life balance!</p>
+				<picture>
+					<source media="(min-resolution: 2dppx)" srcset="img/2x/chibi_win.png">
+					<img src="img/chibi_win.png" alt="Sad Rachel cries that she has no life.">
+				</picture>
+				<h1>You acheived work/life balance!</h1>
+				<p>You are awesome! Awesome people deserve awesome things. My present to you this holiday season: <br /><a href="http://eepurl.com/_Yc_L" target="_blank">the Web Animation Weekly Newsletter</a></p>
+				<p>Please remember to take care of yourself in 2015 :)</p>
 				<button id="playAgain">Play again!</button>
+				<p class="note">Psst. Need <a href="http://rachelnabors.com/training/">some training</a> in the new year?</p>
 			</div>
 			<div id="loseState" class="state" hidden role="alert" aria-live="assertive">
-				<p>Rachel rage quit.</p>
+				<picture>
+					<source media="(min-resolution: 2dppx)" srcset="img/2x/chibi_lose.png">
+					<img src="img/chibi_lose.png" alt="Adorable Rachel says thank you for taking care of me! Hugs?">
+				</picture>
+				<h1>Rachel rage quit.</h1>
+				<p>Here's a hot tip. I always say you can get by in life eating, sleeping and reading comic books.</p>
 				<button id="tryAgain">Try again?</button>
 			</div>
 		</div>
-		<audio id="audio" preload="auto" loop>
-			<source src="audio/typing.mp3" type="audio/mp3" />
-			<source src="audio/typing.ogg" type="audio/ogg" />
-		</audio>
+		<footer>
+			<small><a href="http://www.rachelthegreat.com/" target="_blank">Rachel the Great</a> copyright &copy; 2003&ndash;2014 Rachel Nabors; Code is free like the air.</small>
+		</footer>
 		<script src="js/core.js"></script>
 	</body>
 </html>

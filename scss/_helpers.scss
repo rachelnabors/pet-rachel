@@ -36,7 +36,7 @@
 }
 
 %fadeIn {
-    transition: opacity .25s;
+    transition: opacity .25s $timing-function-custom;
 }
 
 %show {

@@ -11,8 +11,9 @@ $mauve: #c774b3;
 $magenta: #e64988;
 $rust: #56001d;
 
-$link:$rust;
-$link-visited:darken($rust,10%);
+$link: $cyan;
+$link-active: $magenta;
+$link-visited: $lavender;
 
 $color-canvas: $black;
 $color-base: $lite_blue;
@@ -22,6 +23,9 @@ $d_observationWindow: 500px;
 $d_observationWindow_hd: $d_observationWindow * 2;
 $d_observationWindow-h: 500px;
 $d_observationWindow-h_hd: $d_observationWindow-h * 2;
+
+// Timing
+$timing-function-custom: cubic-bezier(.21,.57,.52,.85);
 
 // Breakpoints
 // $bp_hd: (-webkit-min-device-pixel-ratio: 2, min-device-pixel-ratio: 2);
