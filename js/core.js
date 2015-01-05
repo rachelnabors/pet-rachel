@@ -1,5 +1,5 @@
-"use strict";
 (function(){
+"use strict";
 
 var body = document.body;
 var character = document.getElementById("character");
@@ -27,23 +27,22 @@ var happinessMeter = {
         }
         return sumHappiness;
     },
-    updateMeterViz : function(meter, increment) {
-        meter.value = increment;
-        meter.setAttribute("aria-valuenow", increment);
+    updateMeterViz : function(meter, points) {
+        meter.value = points;
+        meter.setAttribute("aria-valuenow", points);
     },
     incrementPoint : function(meterName) {
         if (this.meters[meterName] < 3) {
-            this.updateMeterViz(happinessMeter[meterName +"Viz"], ++this.meters[meterName]);
-        } else {
-            this.updateMeterViz(happinessMeter[meterName +"Viz"], this.meters[meterName]);
+          this.meters[meterName]++;
         }
+        this.updateMeterViz(happinessMeter[meterName + "Viz"], this.meters[meterName]);
+
     },
     decrementPoint : function(meterName) {
         if (this.meters[meterName] > 0) {
-            this.updateMeterViz(happinessMeter[meterName +"Viz"], --this.meters[meterName]);
-        } else {
-            this.updateMeterViz(happinessMeter[meterName +"Viz"], this.meters[meterName]);
+          this.meters[meterName]--;
         }
+        this.updateMeterViz(happinessMeter[meterName + "Viz"], this.meters[meterName]);
     },
     init : function() {
         controls.hidden = false;
