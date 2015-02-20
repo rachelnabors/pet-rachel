@@ -22,7 +22,7 @@
 }
 
 /* line 256, spritesheet/*.png */
-.spritesheet-sprite, .laptop, .body, .mouth, .rage-quit .mouth, .unhappy .mouth, .enraged .mouth, .joyous .mouth, .overjoyed .mouth, .happy .mouth, .eyes, .rage-quit .eyes, .enraged .eyes, .happy .eyes, .joyous .eyes, .overjoyed .eyes, .bored .body, .gurgle, .bags, .snore, .hungry .mouth, .tired.happy .bags, .tired.joyous .bags, .tired.overjoyed .bags, .sleeping .body, .sleeping .mouth, .sleeping .eyes, .huff, .playing .body, .choco, .snacking .choco, .burrito, .eating .burrito, .book {
+.spritesheet-sprite, .laptop, .body, .mouth, .rage-quit .mouth, .unhappy .mouth, .enraged .mouth, .happy .mouth, .overjoyed .mouth, .joyous .mouth, .eyes, .rage-quit .eyes, .enraged .eyes, .happy .eyes, .joyous .eyes, .overjoyed .eyes, .bored .body, .gurgle, .bags, .snore, .hungry .mouth, .tired.happy .bags, .tired.joyous .bags, .tired.overjoyed .bags, .sleeping .body, .sleeping .mouth, .sleeping .eyes, .huff, .playing .body, .choco, .snacking .choco, .burrito, .eating .burrito, .book {
   background-image: url('../img/spritesheet-s02e10d4fe9.png');
   background-repeat: no-repeat;
 }
@@ -255,25 +255,25 @@ button:disabled {
   }
 }
 /* line 134, ../scss/style.scss */
-.joyous .mouth {
+.happy .mouth {
   background-size: 543.47826% auto;
   background-position: 0 94.30856%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 134, ../scss/style.scss */
-  .joyous .mouth {
+  .happy .mouth {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 94.42326%;
   }
 }
 /* line 137, ../scss/style.scss */
-.overjoyed .mouth, .happy .mouth {
+.overjoyed .mouth, .joyous .mouth {
   background-size: 543.47826% auto;
   background-position: 0 87.25306%;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   /* line 137, ../scss/style.scss */
-  .overjoyed .mouth, .happy .mouth {
+  .overjoyed .mouth, .joyous .mouth {
     background-image: url('../img/spritesheet-2x-sdd0bb7a30f.png');
     background-position: 0 87.51192%;
   }

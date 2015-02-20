@@ -131,11 +131,11 @@ button {
 	.enraged & {
 		@include use-sprite(mouth-frown);
 	}
-	.joyous & {
+	.happy & {
 		@include use-sprite(mouth-smile);
 	}
 	.overjoyed &,
-	.happy & {
+	.joyous & {
 		@include use-sprite(mouth-big-smile);
 	}
 }
